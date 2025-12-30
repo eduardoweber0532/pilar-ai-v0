@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pilar AI Growth System | A Infraestrutura de Crescimento AI-Powered</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      /* Primitives */
+      --brand: #6A4CFF;
+      --brand-hover: #7D61FF;
+      --brand-muted: rgba(106, 76, 255, 0.1);
+      --accent: #FF4CF4;
+      --cta: #00F5D4;
+      /* Vibrant Growth Cyan */
+      --cta-hover: #00D1B5;
+      --background: #050505;
+      --foreground: #FFFFFF;
+      --muted: #8E8E93;
+      --border: rgba(255, 255, 255, 0.08);
+      --glass: rgba(255, 255, 255, 0.03);
+
+      /* Spacing & Effects */
+      --section-py: 8rem;
+      --radius-card: 2.5rem;
+      --radius-button: 9999px;
+      --blur-glass: 12px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .text-balance {
+      text-wrap: balance;
+    }
+
+    /* Utilities */
+    .bg-glass {
+      background: var(--glass);
+      backdrop-filter: blur(var(--blur-glass));
+    }
+
+    .border-glass {
+      border: 1px solid var(--border);
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--background);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--brand);
+    }
+
+    @keyframes spotlight {
+      from {
+        opacity: 0;
+        transform: translate(-72%, -62%) scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -40%) scale(1);
+      }
+    }
+
+    .animate-spotlight {
+      animation: spotlight 2s ease-out forwards;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
